@@ -30,19 +30,19 @@ const Movie = () => {
             setMovies(trimmedMovies);
         }
     }, [data])
-
     return (
         <div>
             <Header />
-            {isLoading ? <div>loading......</div> : <></>}
+            {isLoading ? <div style={{ height: "487px" }}>loading......</div> : <></>}
             <div className='grid-7-col'>
                 {movies ? movies?.map((item) => {
                     return (
                         <div key={item.title}><Card item={item} /></div>
                     )
-                }) : <div style={{ height: "487px" }}>Empty</div>}
+                }) : <></>}
+
             </div>
-            {error ? JSON.stringify(error?.message) : <></>}
+            {error ? <div style={{ height: "487px" }}>{JSON.stringify(error?.message)}</div> : <></>}
             <Footer />
         </div>
     )

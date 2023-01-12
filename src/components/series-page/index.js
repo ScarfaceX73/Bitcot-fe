@@ -33,14 +33,16 @@ const Series = () => {
     return (
         <div>
             <Header />
-            {isLoading ? <div>loading......</div> : <></>}
+            {isLoading ? <div style={{ height: "487px" }}>loading......</div> : <></>}
             <div className='grid-7-col'>
-                {series ? series?.map(item => <div key={item.title}>
-                    <Card item={item} />
-                </div>) : <></>}
+                {series ? series?.map((item) => {
+                    return (
+                        <div key={item.title}><Card item={item} /></div>
+                    )
+                }) : <></>}
 
             </div>
-            {error ? JSON.stringify(error?.message) : <></>}
+            {error ? <div style={{ height: "487px" }}>{JSON.stringify(error?.message)}</div> : <></>}
             <Footer />
         </div>
     )
