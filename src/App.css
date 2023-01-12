@@ -13,7 +13,7 @@
 
 .footer {
   background-color: rgb(30, 30, 30);
-  height: 300px;
+
   color: #ffffff;
 }
 
@@ -101,7 +101,51 @@
 
 .grid-7-col {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   row-gap: 30px;
   margin: 50px 5%;
+}
+
+@media screen and (min-width: 1200px) {
+  .grid-7-col {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .grid-7-col {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .mobile-store {
+    display: block;
+  }
+  .social-media {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .app-store {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .free-trail {
+    display: none;
+  }
+  .unordered-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-store {
+    display: none;
+  }
 }
