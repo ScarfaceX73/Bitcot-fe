@@ -125,12 +125,14 @@
     margin: 20px 0px;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
   }
 
   .app-store {
     margin: 20px 0px;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
