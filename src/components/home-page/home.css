@@ -1,0 +1,30 @@
+.home {
+  display: flex;
+}
+
+.container > div {
+  background-color: #1e1e1e;
+  height: 300px;
+  width: 200px;
+  background-image: url(../../assets/placeholder.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  font-size: xx-large;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.container {
+  margin: 30px 30px auto 0px;
+}
+
+.container > div > a {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
