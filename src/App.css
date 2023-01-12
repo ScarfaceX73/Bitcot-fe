@@ -88,10 +88,12 @@
 .social-media {
   margin-right: 30%;
   display: flex;
+  margin-bottom: 50px;
 }
 
 .app-store {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .app-store > img {
